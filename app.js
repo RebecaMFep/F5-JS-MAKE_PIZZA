@@ -1,8 +1,10 @@
-let masa = "masa precocida" ;
-let salsa = "salsa de tomate";
-let queso= 200;
-let bacon = "bacon";
-let carne = "carne picada";
+let ingredientes = [
+"masa precocida",
+"salsa de tomate",
+"200 grs de queso",
+"bacon",
+"carne picada"
+] 
 
 function app(){
     makepizza();
@@ -24,8 +26,8 @@ function prepararMasa(){
 }
 
 function añadirIngredientes(){
-    console.log("Añadir la salsa de tomate encima de la base");
-    console.log("Añadir", queso, "grs de queso");
-    console.log("Añadir", carne, "previamente cocinada");
-    console.log("añadir el", bacon, "a la pizza")
+    for(let i=0; i < ingredientes.length; i++){
+        console.log("Añadir", ingredientes[i])
+    }
+   
 }
