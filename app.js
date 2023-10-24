@@ -29,5 +29,6 @@ function añadirIngredientes(){
     for(let i=0; i < ingredientes.length; i++){
         console.log("Añadir", ingredientes[i])
     }
-   
 }
+
+
