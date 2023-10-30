@@ -1,8 +1,33 @@
 
-let pizza 
-let nompizza = 'barbacoa'
 
-export function pregunta(){
+
+let pizza= [
+    {
+        name: "pepperoni",
+        ingredientes: ["salsa de tomate", "mozzarella", "pepperoni"],
+    },
+    {
+        name: "margarita",
+        ingredientes: ["mozzarella", "rucula","mozzarella fresca", "tomate" ]
+    }
+
+]
+
+function añadirIngredientes(){
+    for(let i=0; i < ingredientes.length; i++){
+        console.log("Añadir", ingredientes[i])
+    }
+} 
+
+
+
+
+
+
+
+
+
+/* export function pregunta(){
     process.stdout.write("¿Que pizza deseas?\n ");
 
 process.stdin.on ('data', function (data){
@@ -14,7 +39,7 @@ process.stdin.on ('data', function (data){
     process.exit();
 });
 
-}
+} */
 
 function makepizza(){
     prepararMasa();
@@ -40,9 +65,3 @@ function prepararMasa(){
     console.log("Sacar la masa de su paquete");
     console.log("Estirar la masa en una bandeja");
 }
-
-function añadirIngredientes(){
-    for(let i=0; i < ingredientes.length; i++){
-        console.log("Añadir", ingredientes[i])
-    }
-} 

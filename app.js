@@ -1,12 +1,17 @@
-/* import promptSync from "prompt-sync"; */
+import promptSync from "prompt-sync";
 
-import { pregunta } from "./funciones.js";
- 
+/* import { makepizza } from "./funciones.js" */
+
 function app(){
-    pregunta();
+    const prompt = promptSync();
+    const pizzaName = prompt ("What pizza do you want?\n (pepperoni,margarita): ")
+    
+ /*    let result = makepizza(pizzaName) */
 
 }
-app(); 
+
+app();
+
 
 
 
